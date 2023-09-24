@@ -1,0 +1,79 @@
+<h1 class="text-center pt-5">{{"Accepted Qoutation Succssfully !" | translate}}</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="row pt-4" >
+  <div class=" col-lg-2" >
+    <div class="card">
+      <h1>{{"Payment" | translate}}</h1>
+      <a routerLink="/all-paymetns" class="text-decoration-none">{{"All Payments" | translate}}</a>
+      <img src="../../../../assets/Logisty ui images/payment.jpg"
+                                alt="" class="m-auto"
+                                style="width: 80px; border-radius: 10px;">
+    </div>
+  </div>
+  <div class="col-lg-2 "style="" >
+    <div class="card">
+      <h1>{{"Price" | translate}}</h1>
+      <a routerLink="/all-price" class="text-decoration-none">{{"all price" | translate}}</a>
+      <img  src="../../../../assets/Logisty ui images/track.png"
+      alt="" class="m-auto pt-3"
+      style="width: 80px; border-radius: 10px;">
+    </div>
+  </div>
+  <div class="col-lg-2" >
+    <div class="card">
+      <h1>{{"Notification" | translate}}</h1>
+      <a routerLink="/all-notifications" class="text-decoration-none">{{"All Notifications" | translate}}</a>
+      <img  src="../../../../assets/Logisty ui images/notification .webp"
+      alt="" class="m-auto pt-3"
+      style="width: 80px; border-radius: 10px;">
+    </div>
+  </div>
+  <div class=" col-lg-2" >
+    <div class="card">
+      <h1>{{"Chat" | translate}}</h1>
+      <a [routerLink]='["/new-chat" ,this.order_id]' class="text-decoration-none">{{"Add New Chat" | translate}}</a><br>
+      <a [routerLink]='["/all-chats" ,this.order_id]' class="text-decoration-none">{{"All Chats" | translate}}</a>
+      <img src="../../../../assets/Logisty ui images/chat.jpg"
+      alt="" class="m-auto"
+      style="width: 80px; border-radius: 10px;">
+    </div>
+  </div>
+
+  <div class="col-lg-2" >
+    <div class="card">
+      <h1>{{"Rate" | translate}}</h1>
+      <a [routerLink]='["/new-rate",this.client_id ]' class="text-decoration-none">{{"Add New Rate" | translate}}</a><br>
+      <a routerLink="/all-rates" class="text-decoration-none">{{"All Rates" | translate}}</a>
+      <img src="../../../../assets/Logisty ui images/rate.webp"
+      alt="" class="m-auto"
+      style="width: 80px; border-radius: 10px;">
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-2 "style="" >
+    <div class="card">
+      <h1>{{"Tracking" | translate}}</h1>
+      <a [routerLink]='["/new-track",this.order_id]' class="text-decoration-none">{{"Add New track" | translate}}</a><br>
+      <a [routerLink]='["/all-tracks",this.order_id]' class=" text-decoration-none">{{"track this Order" | translate}}</a>
+      <img  src="../../../../assets/Logisty ui images/track.png"
+      alt="" class="m-auto pt-3"
+      style="width: 80px; border-radius: 10px;">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+

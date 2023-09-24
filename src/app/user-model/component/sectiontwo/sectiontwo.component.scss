@@ -1,0 +1,80 @@
+.backgroudImgsection2{
+    background-image:url("../../../../assets/Logisty ui images/freepik--Symbols--inject-82.svg");
+    background-size: 100vh;
+    color:white;
+    background-color: #021955;
+    font-weight:bold ;
+    border: none;
+    height: 50px;
+    width: 100%;
+  }
+  .backgroudImgsection2:hover{
+  opacity: 0.5;
+
+  }
+
+  .sectiontwoIamg{
+    background-image: url("../../../../assets/Logisty ui images/Group18616.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .addries{
+  font-size: 40px;
+  color: #000;
+}
+p{
+  font-size: 16px;
+}
+.btn{
+  background-color: white;
+   border-radius: 0%;
+   margin-left: -2px ;
+  //border: none;
+   color: #505050;
+// border-radius: 10px;
+}
+.btn:hover
+{
+  background-color:#021955 !important;
+}
+
+@media only screen and (max-width: 600px) {
+ .btn {
+ font-size: 8px;
+ font-weight: 300;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 10px;
+    font-weight: 500;
+     }
+   }
+
+   @media only screen and (max-width: 415px) {
+    .btn {
+
+   font-size: 4px;
+   font-weight: 300;
+    }
+  }
+  .container1 {
+    height: 30px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    left: 70%;
+  }
+  .circle {
+    //display: inline-block;
+   // vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 4px);
+  }

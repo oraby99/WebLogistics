@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+      <div class="col-3">
+    <app-individual-sidebar></app-individual-sidebar>
+      </div>
+
+      <div class="col-8 ">
+
+
+              <div class="row   mt-5 ">
+                <div class="feature col mb-3" *ngFor="let item of requests ; let i = index">
+                      <div class="card">
+                        <div class="card-body">
+                          <h3 class="fw-bold d-inline">{{item.service}} </h3>
+                          <span class="float-end"><img class="mt-2" src="../../../../../assets/Logisty ui images/um.svg" height="30px"
+                              ms-3alt="" srcset=""></span>
+                          <p class="text-muted bi bi-bag ">12/2/2022 8:00 pm</p>
+                          <p>{{item.status}}</p>
+                          <p>{{item.country_origin_name}}</p>
+                          <hr>
+                          <div class="d-flex justify-content-around">
+                            <p class=" btn btn2 w-50 mx-1    btn1 text-decoration-none " >Price</p>
+                            <p class=" btn btn2 w-50 mx-1    btn1 text-decoration-none " >Time</p>
+                            <a [routerLink]="['/individual-new-quotation', item.order_id ]"   class="btn btn-success">SEND</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+              </div>
+            </div>
+
+    </div>
+  </div>
+
+
+
+
+

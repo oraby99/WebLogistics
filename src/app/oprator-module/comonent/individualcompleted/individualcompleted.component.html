@@ -1,0 +1,64 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+     <app-individual-sidebar></app-individual-sidebar>
+
+    </div>
+      <div class="col-9 ">
+          <div class="row my-3 ">
+              <form class="example d-flex justify-content-between ">
+         <button class="btn w-25 border-1 ">{{"All" | translate}}</button>
+         <button class="btn w-25 border-1  ">{{"Accepted" | translate}}</button>
+         <button class="btn w-25 border-1">{{"Rejected" | translate}}</button>
+         <button class="btn w-25 border-1">{{"Pending" | translate}}</button>
+                </form>
+          </div>
+          <div class="card mb-4">
+              <div class="card-body table-responsive">
+
+                  <table class="table table-hover table-striped   table-borderless table-responsive ">
+                      <thead class="mdb-color darken-3 ">
+                          <tr class="text-white">
+                              <th>{{"Status" | translate}}</th>
+                              <th>{{"Day Number" | translate}}</th>
+                              <th>{{"Start Date" | translate}}</th>
+                              <th>{{"End Date" | translate}}</th>
+                              <th>{{"Price" | translate}}</th>
+                           <th>#</th>
+                          </tr>
+                      </thead>
+
+                      <tbody *ngFor="let item of data">
+                          <tr>
+                              <th >send</th>
+                              <td>{{item.day_number}}</td>
+                             <td>{{item.start_date}}</td>
+                              <td>{{item.end_date}}</td>
+                             <td>{{item.price}}</td>
+
+                              <td ><a ><i [routerLink]='["/individul-completed-detalis",item.order_id ]' class="bi bi-info-circle" ></i>
+                              </a></td>
+                          </tr>
+
+
+
+
+
+
+
+                      </tbody>
+
+                  </table>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+
